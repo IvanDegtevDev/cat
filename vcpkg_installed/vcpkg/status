@@ -1,0 +1,70 @@
+Package: vcpkg-cmake-config
+Version: 2024-05-23
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 0abe88aec4203534d856d84f1bbda4cbaee3d5d64fa4b5a1a67f7a155df3d702
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2024-04-23
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 18e76365ca28fc4fca4ad0f8031ca0a9e1f2c7fd40a8081daf7c059ca08dec90
+Status: install ok installed
+
+Package: vulkan-headers
+Version: 1.4.350.0
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: f6385664918431b33f23bec788cb015a7336f6de4e0953f7a615e41ff672b3d5
+Description: Vulkan header files and API registry
+Status: install ok installed
+
+Package: vulkan-loader
+Version: 1.4.350.0
+Depends: vcpkg-cmake, vcpkg-cmake-config, vulkan-headers
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 08a195ef36b5f982a0254a245a14777ec5c85db0740db70d1afd8086dd75da30
+Description: Vulkan Development Tools
+Status: install ok installed
+
+Package: vulkan
+Version: 2023-12-17
+Depends: vcpkg-cmake, vulkan-headers, vulkan-loader
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 5cc3059ea22ac678722a1bbb503f6954fa1a2c40a81fee30782b29fb03f9ccc5
+Description: A stub package that ensures that Vulkan headers and a loader are available.
+    On Android, the NDK provides a loader at API level 24 or higher.
+Status: install ok installed
+
+Package: glfw3
+Version: 3.4
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 3f85ef9b7190ca149f15dca08bb640d736cfdd8ac3e3ace163e1b83f47046f4a
+Description: GLFW is a free, Open Source, multi-platform library for OpenGL, OpenGL ES and Vulkan application development. It provides a simple, platform-independent API for creating windows, contexts and surfaces, reading input, handling events, etc.
+Status: install ok installed
+
+Package: glm
+Version: 1.0.3
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: df2f7543839215f776ddfda4c226b0d183191dfa6530015904f2376ac2a076c0
+Description: OpenGL Mathematics (GLM)
+Status: install ok installed
+
+Package: stb
+Version: 2024-07-29
+Port-Version: 1
+Architecture: x64-windows
+Multi-Arch: same
+Abi: f9b0166341056cbf347f49910f34fb53fcd38548a497eda1d77560a41550a4fc
+Description: public domain header-only libraries
+Status: install ok installed
+

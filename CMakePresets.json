@@ -1,0 +1,30 @@
+﻿{
+  "version": 6,
+
+  "configurePresets": [
+    {
+      "name": "windows-debug",
+      "displayName": "Windows Debug x64",
+
+      "generator": "Visual Studio 18 2026",
+      "architecture": "x64",
+
+      "binaryDir": "${sourceDir}/build",
+
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": {
+          "value": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+          "type": "FILEPATH"
+        }
+      }
+    }
+  ],
+
+  "buildPresets": [
+    {
+      "name": "windows-debug",
+      "configurePreset": "windows-debug",
+      "configuration": "Debug"
+    }
+  ]
+}

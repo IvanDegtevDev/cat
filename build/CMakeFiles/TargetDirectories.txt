@@ -1,0 +1,4 @@
+C:/Users/cacet/OneDrive/Desktop/с++/Vulkan/build/CMakeFiles/Vulkan.dir
+C:/Users/cacet/OneDrive/Desktop/с++/Vulkan/build/CMakeFiles/foo.dir
+C:/Users/cacet/OneDrive/Desktop/с++/Vulkan/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/cacet/OneDrive/Desktop/с++/Vulkan/build/CMakeFiles/ZERO_CHECK.dir
